@@ -1,0 +1,6 @@
+{
+  "name": "Yellow Star E-Commerce Platform",
+  "description": "B2C & B2B Wholesale E-Commerce Platform for Yellow Star Produce & Food Processors Uganda Limited, featuring Flour, Peanut Butter, and Honey products with local payment integrations like MTN Mobile Money and Airtel Money.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

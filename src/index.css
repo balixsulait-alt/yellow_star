@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;850;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  /* Direct HTML background color mappings for elements */
+  ::selection {
+    background-color: rgba(0, 122, 72, 0.15);
+    color: #007A48;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  
+  .animate-fade-in-down {
+    animation: fadeInDown 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .animate-scale-up {
+    animation: scaleUp 0.3s cubic-[#007A48]/10 both;
+  }
+
+  .animate-spin-slow {
+    animation: spin 8s linear infinite;
+  }
+
+  /* Global utility replacements representing the exact corporate theme colors on arbitrary values */
+  .bg-\[\#1A6B3A\] {
+    background-color: #007A48 !important;
+  }
+  .hover\:bg-\[\#1A6B3A\]:hover {
+    background-color: #006b3f !important;
+  }
+  .text-\[\#1A6B3A\] {
+    color: #007A48 !important;
+  }
+  .hover\:text-\[\#1A6B3A\]:hover {
+    color: #006b3f !important;
+  }
+  .border-\[\#1A6B3A\] {
+    border-color: #007A48 !important;
+  }
+  .bg-\[\#E8F5ED\] {
+    background-color: #f0fbf5 !important;
+  }
+  .border-emerald-100 {
+    border-color: #d1f2e1 !important;
+  }
+  .focus\:outline-\[\#1A6B3A\]:focus {
+    outline-color: #007A48 !important;
+    outline: 2px solid #007A48 !important;
+  }
+  .focus\:ring-\[\#1A6B3A\]:focus {
+    --tw-ring-color: #007A48 !important;
+    ring-color: #007A48 !important;
+  }
+  .hover\:text-\[\#F5A800\]:hover {
+    color: #F6A800 !important;
+  }
+  .text-\[\#F5A800\] {
+    color: #F6A800 !important;
+  }
+  .bg-\[\#F5A800\] {
+    background-color: #F6A800 !important;
+  }
+  .hover\:bg-\[\#F5A800\]:hover {
+    background-color: #e09600 !important;
+  }
+  .border-\[\#F5A800\] {
+    border-color: #F6A800 !important;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
