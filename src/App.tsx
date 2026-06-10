@@ -5,7 +5,7 @@ import { Footer } from './components/Footer';
 import { CartSidebar } from './components/CartSidebar';
 import { MoMoPrompt } from './components/MoMoPrompt';
 
-// Views
+//   Views
 import { HomeView } from './views/HomeView';
 import { ProductsView } from './views/ProductsView';
 import { ProductDetailView } from './views/ProductDetailView';
